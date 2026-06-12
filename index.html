@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sergio | Artista</title>
+    <meta
+      name="description"
+      content="Sitio oficial de Sergio: sobre mí, trayectoria y próximas presentaciones."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "name": "Sergio",
+            "jobTitle": "Artista",
+            "description": "Artista contemporáneo con enfoque en experiencias visuales y escénicas.",
+            "url": "https://example.com",
+            "sameAs": [
+              "https://instagram.com/sergio-artista",
+              "https://youtube.com/@sergio-artista"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Sergio | Sitio Oficial",
+            "url": "https://example.com",
+            "inLanguage": "es"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <header class="site-header" aria-label="Cabecera principal">
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Ir a inicio">Sergio</a>
+        <ul class="nav-links">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#trayectoria">Trayectoria</a></li>
+          <li><a href="#presentaciones">Próximas presentaciones</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido" aria-label="Contenido principal del sitio">
+      <section id="inicio" class="panel hero" aria-labelledby="hero-title">
+        <div class="overlay" aria-hidden="true"></div>
+        <div class="panel-content hero-content">
+          <p class="eyebrow">Sitio oficial</p>
+          <h1 id="hero-title">Bienvenidos al universo artístico de Sergio</h1>
+          <p>
+            Una experiencia que une imagen, sonido y emoción en una narrativa viva.
+            Descubre su historia, recorrido y próximos encuentros.
+          </p>
+          <a class="cta" href="#presentaciones" aria-label="Ver próximas presentaciones">
+            Ver presentaciones
+          </a>
+        </div>
+      </section>
+
+      <section id="sobre-mi" class="panel about" aria-labelledby="sobre-mi-title">
+        <div class="panel-content two-col">
+          <article>
+            <h2 id="sobre-mi-title">Sobre mí</h2>
+            <p>
+              Soy Sergio, artista enfocado en crear piezas escénicas y visuales que
+              conectan memoria, movimiento y territorio. Mi trabajo explora el
+              diálogo entre lo íntimo y lo colectivo.
+            </p>
+            <p>
+              Cada obra nace del encuentro con personas, sonidos y espacios reales,
+              transformándolos en experiencias inmersivas para el público.
+            </p>
+          </article>
+          <figure class="portrait">
+            <img
+              src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80"
+              alt="Retrato artístico de Sergio en estudio"
+            />
+            <figcaption>Retrato en proceso creativo.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="trayectoria" class="panel journey" aria-labelledby="trayectoria-title">
+        <div class="panel-content">
+          <h2 id="trayectoria-title">Trayectoria</h2>
+          <ol class="timeline" aria-label="Línea de tiempo de trayectoria artística">
+            <li>
+              <h3>2018 · Primer montaje independiente</h3>
+              <p>Inicio de una propuesta escénica centrada en narrativas urbanas.</p>
+            </li>
+            <li>
+              <h3>2021 · Residencia artística internacional</h3>
+              <p>Desarrollo de obra interdisciplinaria con enfoque audiovisual.</p>
+            </li>
+            <li>
+              <h3>2024 · Gira regional</h3>
+              <p>Presentaciones en teatros y espacios culturales de Latinoamérica.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section
+        id="presentaciones"
+        class="panel shows"
+        aria-labelledby="presentaciones-title"
+      >
+        <div class="panel-content">
+          <h2 id="presentaciones-title">Próximas presentaciones</h2>
+          <ul class="show-list" aria-label="Listado de próximas presentaciones">
+            <li>
+              <h3>Ciudad de México</h3>
+              <p><strong>Fecha:</strong> 20 de julio de 2026</p>
+              <p><strong>Lugar:</strong> Foro Centro Vivo</p>
+            </li>
+            <li>
+              <h3>Bogotá</h3>
+              <p><strong>Fecha:</strong> 02 de agosto de 2026</p>
+              <p><strong>Lugar:</strong> Teatro Horizonte</p>
+            </li>
+            <li>
+              <h3>Madrid</h3>
+              <p><strong>Fecha:</strong> 18 de septiembre de 2026</p>
+              <p><strong>Lugar:</strong> Sala Prisma</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Pie de página">
+      <p>© 2026 Sergio · Arte en movimiento</p>
+    </footer>
+  </body>
+</html>

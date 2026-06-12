@@ -12,6 +12,14 @@ static_file_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), './'
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0 #disable cache
 
+
+@app.after_request
+def add_seo_headers(response):
+    # Ensure local/server responses are crawlable for SEO audits.
+    response.headers.pop('X-Robots-Tag', None)
+    response.headers['X-Robots-Tag'] = 'index, follow'
+    return response
+
 # Serving the index file
 @app.route('/', methods=['GET'])
 def serve_dir_directory_index():
